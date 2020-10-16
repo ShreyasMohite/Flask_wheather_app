@@ -1,0 +1,62 @@
+body {
+    background-color: rgba(0, 0, 0, 0.808);
+}
+
+.makeform {
+    margin-left: 30%;
+    margin-top: 7%;
+}
+
+input[type="text"] {
+    width: 350px;
+    height: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    text-transform: capitalize;
+    text-align: center;
+    border: 2px solid blueviolet;
+    color: rgb(71, 29, 223);
+    border-radius: 20px;
+}
+
+input[type="text"]::placeholder {
+    color: blue;
+}
+
+input[type="text"]:focus {
+    border: 2px solid rgb(9, 98, 182);
+    border-radius: 20px;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    color: wheat;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    text-transform: capitalize;
+    border: 2px solid blueviolet;
+    background: transparent;
+    border-radius: 24px;
+}
+
+button:hover {
+    background-color: blueviolet;
+    color: white;
+    box-shadow: 3px 4px 20px blueviolet;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid white;
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+    margin-left: 33%;
+    box-shadow: 3px 4px 50px rgb(240, 240, 241);
+}
+
+.card h3 {
+    margin-left: 70px;
+}

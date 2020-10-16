@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> {%if title%}
+    <title>{{title}}</title>
+    {%else%}
+    <title>home</title>
+    {%endif%}
+</head>
+
+<body>
+    <form method="POST">
+        <div class="makeform">
+            <input type="text" name="just" id="" placeholder="Enter City Name">
+            <button type="submit">search</button>
+        </div>
+    </form>
+    {%block content%}
+    <div class="card">
+        <div class="place">
+            <h3>Name:{{name[0]['name']}}</h3>
+            <h3>Description:{{name[0]['description']}}</h3>
+            <h3>Temp:{{name[0]['temp']}}</h3>
+            <h3>Humidity:{{name[0]['humidity']}}</h3>
+            <h3>Speed:{{name[0]['speed']}}</h3>
+            <h3>Country:{{name[0]['country']}}</h3>
+        </div>
+    </div>
+    {%endblock%}
+</body>
+
+</html>
